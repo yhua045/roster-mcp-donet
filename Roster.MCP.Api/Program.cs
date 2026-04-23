@@ -36,7 +36,6 @@ builder.Services
 
 // ── Other services ───────────────────────────────────────────────────────────
 builder.Services.AddOpenApi();
-builder.Services.AddControllers();
 
 var app = builder.Build();
 
@@ -49,7 +48,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseMiddleware<RequestLoggingMiddleware>();
-app.MapControllers();
 
 // ── MCP SSE endpoint ─────────────────────────────────────────────────────────
 app.MapMcp("/mcp");
