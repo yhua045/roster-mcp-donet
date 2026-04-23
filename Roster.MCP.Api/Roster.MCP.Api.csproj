@@ -9,6 +9,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.7" />
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="10.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="10.5.0" />
+    <PackageReference Include="ModelContextProtocol.AspNetCore" Version="1.2.0" />
     <PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
     <PackageReference Include="Serilog.Sinks.Console" Version="6.1.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.7" />
@@ -16,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Roster.MCP.Data\Roster.MCP.Data.csproj" />
+    <ProjectReference Include="..\Roster.MCP.RosterApi\Roster.MCP.RosterApi.csproj" />
   </ItemGroup>
 
 </Project>
